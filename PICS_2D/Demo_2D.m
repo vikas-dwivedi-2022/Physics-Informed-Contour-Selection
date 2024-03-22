@@ -17,13 +17,13 @@ R = spline_RHS_block(s);
 [B, dBds, d2Bds2] = interpolation_blocks(s,nl);
 
 %% Test-Image-1
-% load("hydro_img_128.mat");
+% load("test_img_01.mat");
 % img=double(hydro_img_128);
 % Cx=64;Cy=64;
 % [x0, y0] = create_init_circle(Cx, Cy, 0.2*Px,nc);
 
 %% Test-Image-2
-load("ct_10.mat");
+load("test_img_02.mat");
 img=double(resized_img);
 img=img/255;
 Cx=50;Cy=64;
